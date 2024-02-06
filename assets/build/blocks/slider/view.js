@@ -10358,11 +10358,9 @@ __webpack_require__.r(__webpack_exports__);
 // init Swiper:
 const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper", {
   loop: true,
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination"
   },
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"

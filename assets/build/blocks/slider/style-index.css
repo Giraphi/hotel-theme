@@ -731,12 +731,19 @@ button.swiper-pagination-bullet {
 }
 
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  aspect-ratio: 1.77;
 }
-
-.fuckkk {
-  color: red;
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: white;
+}
+.swiper .swiper-pagination-bullet {
+  background-color: #111;
+  opacity: 1;
+}
+.swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

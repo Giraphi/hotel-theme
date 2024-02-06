@@ -2,10 +2,19 @@
 @import "../../../node_modules/swiper/swiper-bundle.min";
 
 .swiper {
-	width: 600px;
-	height: 300px;
-}
+	width: 100%;
+	aspect-ratio: 1.77;
 
-.fuckkk {
-	color: red;
+	.swiper-button-prev,
+	.swiper-button-next {
+		color: white;
+	}
+
+	.swiper-pagination-bullet {
+		background-color: $color-text;
+		opacity: 1;
+	}
+	.swiper-pagination-bullet.swiper-pagination-bullet-active {
+		background-color: white;
+	}
 }
