@@ -1,10 +1,12 @@
 import { InnerBlocks, useBlockProps } from "@wordpress/block-editor";
 
 export default function Save(props) {
-	const blockProps = useBlockProps.save({ className: "glide__slide" });
+	const blockProps = useBlockProps.save({
+		className: "swiper-slide image-slide",
+	});
 
 	return (
-		<li {...blockProps}>
+		<div {...blockProps}>
 			{props.attributes.imgURL ? (
 				<div className="image-slide__container">
 					<img
@@ -15,6 +17,6 @@ export default function Save(props) {
 			) : (
 				<p>No image selected</p>
 			)}
-		</li>
+		</div>
 	);
 }

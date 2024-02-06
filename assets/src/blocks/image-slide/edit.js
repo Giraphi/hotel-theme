@@ -9,7 +9,7 @@ import apiFetch from "@wordpress/api-fetch";
 import "./editor.scss";
 
 export default function Edit(props) {
-	const blockProps = useBlockProps({ className: "glide__slide" });
+	const blockProps = useBlockProps({ className: "swiper-slide" });
 
 	function onFileSelect(file) {
 		props.setAttributes({ imgID: file.id });

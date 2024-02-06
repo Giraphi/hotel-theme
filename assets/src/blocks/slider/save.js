@@ -5,12 +5,13 @@ export default function Save() {
 
 	return (
 		<div {...blockProps}>
-			<div class="glide">
-				<div data-glide-el="track" class="glide__track">
-					<ul class="glide__slides">
-						<InnerBlocks.Content />
-					</ul>
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<InnerBlocks.Content />
 				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 			</div>
 		</div>
 	);

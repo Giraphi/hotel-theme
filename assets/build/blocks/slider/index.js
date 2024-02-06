@@ -83,13 +83,16 @@ function Save() {
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "glide"
+    class: "swiper"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    "data-glide-el": "track",
-    class: "glide__track"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
-    class: "glide__slides"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks.Content, null)))));
+    class: "swiper-wrapper"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks.Content, null)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "swiper-pagination"
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "swiper-button-prev"
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "swiper-button-next"
+  })));
 }
 
 /***/ }),

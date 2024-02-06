@@ -28,7 +28,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function Edit(props) {
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)({
-    className: "glide__slide"
+    className: "swiper-slide"
   });
   function onFileSelect(file) {
     props.setAttributes({
@@ -120,9 +120,9 @@ __webpack_require__.r(__webpack_exports__);
 
 function Save(props) {
   const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save({
-    className: "glide__slide"
+    className: "swiper-slide image-slide"
   });
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", {
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
   }, props.attributes.imgURL ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "image-slide__container"
@@ -214,7 +214,7 @@ module.exports = window["wp"]["components"];
   \*******************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"hotel-theme/image-slide","version":"0.1.0","title":"Image Slide","category":"hotel","description":"Basic image slide","example":{},"textdomain":"image-slide","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"hotel-theme/image-slide","version":"0.1.0","title":"Image Slide","category":"hotel","description":"Basic image slide","example":{},"textdomain":"image-slide","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 
