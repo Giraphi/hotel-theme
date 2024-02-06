@@ -1,13 +1,13 @@
 <div class="hotel-list">
     <?php
-        $homepagePosts = new WP_Query(array(
-        'posts_per_page' => 20
+        $roomPosts = new WP_Query(array(
+        'posts_per_page' => 20,
+        'post_type' => 'room'
         ));
 
-        while ($homepagePosts->have_posts()) :
-            $homepagePosts->the_post();
+        while ($roomPosts->have_posts()) :
+            $roomPosts->the_post();
     ?>
-
 
     <a class="hotel-list__item" href="<?php the_permalink(); ?>">
 
