@@ -20,8 +20,30 @@ add_action( 'init', function() {
 	register_block_type( get_theme_file_path( '/assets/build/blocks/image-slide' ));	
 } );
 
-// Set default values for hotel room custom fields
-add_action('wp_insert_post', function($post_ID) {
+// Register custom post type: room
+add_action('init', function() {
+	register_post_type('room',
+		array(
+			'labels' => array(
+				'name'          => __('Rooms', 'textdomain'),
+				'singular_name' => __('Room', 'textdomain'),
+				'add_new'       => __( 'Add New Room', 'textdomain' ),			
+			),
+			'supports' => array('title', 'excerpt', 'thumbnail', 'custom-fields', 'editor'),
+			'menu_icon' => 'dashicons-admin-home',
+			'public' => true,
+			'has_archive' => true,
+			'show_in_rest' => true,
+		)
+	);
+});
+
+// For the room custom post type, set default values for custom fields
+add_action('wp_insert_post', function($post_ID, $post) {
+    if (  $post->post_type !== 'room') {
+		return $post_ID;	
+	}
+
 	$hotelRoomDefaults = array(
 		"number of beds" => "2",
 		"price per night" => "99",
@@ -35,47 +57,30 @@ add_action('wp_insert_post', function($post_ID) {
 		}
 	}	
 	return $post_ID;	
-});
+}, 10, 2);
 
-// Register hotel room custom post type
-add_action('init', function() {
-	register_post_type('hotel_room',
-		array(
-			'labels' => array(
-				'name'          => __('Hotel Rooms', 'textdomain'),
-				'singular_name' => __('Hotel Room', 'textdomain'),
-				'add_new'       => __( 'Add New Hotel Room', 'textdomain' ),			
-			),
-			'supports' => array('title', 'excerpt', 'thumbnail', 'custom-fields', 'editor'),
-			'menu_icon' => 'dashicons-admin-home',
-			'public' => true,
-			'has_archive' => true,
-			'show_in_rest' => true,
-		)
-	);
-});
 
-function add_default_block( $content, $post ) {
-    if ( 'hotel_room' === $post->post_type ) {
-        $content = <<<EOT
-		<!-- wp:hotel-theme/slider -->
-		<div class="wp-block-hotel-theme-slider slider">
-			<div class="glide">
-				<div data-glide-el="track" class="glide__track">
-					<ul class="glide__slides">
-						<!-- wp:hotel-theme/image-slide -->
-						<li class="wp-block-hotel-theme-image-slide glide__slide">
-							<p>No image selected</p>
-						</li>
-						<!-- /wp:hotel-theme/image-slide -->
-					</ul>
-				</div>
+// For the room custom post type, set the default content to a slider block
+add_filter( 'default_content', function ( $content, $post ) {
+    if ( 'room' !== $post->post_type ) {
+		return $content;
+	}
+	
+	return <<<EOT
+	<!-- wp:hotel-theme/slider -->
+	<div class="wp-block-hotel-theme-slider slider">
+		<div class="glide">
+			<div data-glide-el="track" class="glide__track">
+				<ul class="glide__slides">
+					<!-- wp:hotel-theme/image-slide -->
+					<li class="wp-block-hotel-theme-image-slide glide__slide">
+						<p>No image selected</p>
+					</li>
+					<!-- /wp:hotel-theme/image-slide -->
+				</ul>
 			</div>
 		</div>
-		<!-- /wp:hotel-theme/slider -->
-		EOT;
-	}
-
-    return $content;
-}
-add_filter( 'default_content', 'add_default_block', 10, 2 );
+	</div>
+	<!-- /wp:hotel-theme/slider -->
+	EOT;
+}, 10, 2 );
