@@ -1,7 +1,6 @@
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 
-// init Swiper:
 const swiper = new Swiper(".swiper", {
 	loop: true,
 	pagination: {
@@ -13,5 +12,3 @@ const swiper = new Swiper(".swiper", {
 	},
 	modules: [Navigation, Pagination],
 });
-
-console.log(swiper);

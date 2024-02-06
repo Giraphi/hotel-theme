@@ -10354,8 +10354,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_modules__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! swiper/modules */ "./node_modules/swiper/modules/index.mjs");
 
 
-
-// init Swiper:
 const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper", {
   loop: true,
   pagination: {
@@ -10367,7 +10365,6 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".swiper", {
   },
   modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination]
 });
-console.log(swiper);
 })();
 
 /******/ })()

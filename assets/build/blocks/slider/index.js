@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Edit(props) {
-  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...(0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)()
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "wp-block-hotel-theme-slider__headline"
@@ -30,7 +30,7 @@ function Edit(props) {
     className: "wp-block-hotel-theme-slider__images"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks, {
     allowedBlocks: ["hotel-theme/image-slide"]
-  }))));
+  })));
 }
 
 /***/ }),
