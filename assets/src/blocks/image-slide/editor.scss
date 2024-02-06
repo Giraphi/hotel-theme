@@ -1,0 +1,29 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import "../../global/style/mixins.scss";
+
+.wp-block-hotel-theme-image-slide {
+	min-height: 100px;
+	background-color: rgba(0, 0, 0, 0.05);
+	@include placeholder-mixin;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	// &__headline {
+	// 	margin-bottom: 16px;
+	// }
+	img {
+		height: 400px;
+		width: auto;
+	}
+
+	p {
+		font-weight: normal;
+		font-style: italic;
+	}
+}

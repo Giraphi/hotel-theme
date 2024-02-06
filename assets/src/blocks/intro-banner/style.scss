@@ -1,0 +1,21 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import "../../global/style/variables.scss";
+
+.intro-banner {
+	padding: 20px 0;
+
+	&__headline {
+		font-weight: 900;
+		text-transform: uppercase;
+		font-size: 5rem;
+		text-align: center;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+}

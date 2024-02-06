@@ -1,0 +1,39 @@
+body {
+	background-color: $color-background;
+	color: $color-text;
+	font-family: var(--wp--preset--font-family--body);
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+// WP resets
+
+a:where(:not(.wp-element-button)) {
+	text-decoration: inherit;
+}
+
+.wp-block-post-title {
+	font-size: 48px;
+	margin-bottom: 32px;
+}

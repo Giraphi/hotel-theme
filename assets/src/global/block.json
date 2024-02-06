@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "hotel-theme/global",
+	"version": "0.1.0",
+	"title": "Global",
+	"category": "hotel",
+	"description": "Global styles and scripts",
+	"example": {},
+	"viewScript": "file:./index.js",
+	"style": "file:./style-index.css"
+}
