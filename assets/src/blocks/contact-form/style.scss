@@ -40,4 +40,19 @@
 		border-radius: 4px;
 		border: 1px solid $color-text;
 	}
+
+	&__confirmation {
+		display: none;
+	}
+
+	&.is-submitted {
+		.htl-contact-form__inputs,
+		.htl-contact-form__submit {
+			display: none;
+		}
+
+		.htl-contact-form__confirmation {
+			display: block;
+		}
+	}
 }

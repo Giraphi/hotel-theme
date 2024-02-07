@@ -70,10 +70,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
 
 
-
 function Save() {
   const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save({
-    className: "htl-contact-form"
+    className: "htl-contact-form htl-js-contact-form"
   });
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
@@ -82,18 +81,20 @@ function Save() {
   }, "Contact"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "If you want to request the room or have any questions, use this form to contact us:"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "htl-contact-form__inputs"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
-    className: "htl-contact-form__input",
+    className: "htl-contact-form__input htl-js-contact-form__input-name",
     placeholder: "Name"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
-    className: "htl-contact-form__input",
+    className: "htl-contact-form__input htl-js-contact-form__input-email",
     placeholder: "E-Mail"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("textarea", {
     type: "",
-    className: "htl-contact-form__textarea",
+    className: "htl-contact-form__textarea htl-js-contact-form__input-message",
     placeholder: "Message ..."
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "htl-contact-form__submit"
-  }, "Submit"));
+    className: "htl-contact-form__submit htl-js-contact-form__submit"
+  }, "Submit"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+    className: "htl-contact-form__confirmation"
+  }, "Thank you for your message. We will contact you soon."));
 }
 
 /***/ }),

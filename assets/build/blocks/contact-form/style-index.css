@@ -765,5 +765,15 @@ button.swiper-pagination-bullet {
   border-radius: 4px;
   border: 1px solid #111;
 }
+.htl-contact-form__confirmation {
+  display: none;
+}
+.htl-contact-form.is-submitted .htl-contact-form__inputs,
+.htl-contact-form.is-submitted .htl-contact-form__submit {
+  display: none;
+}
+.htl-contact-form.is-submitted .htl-contact-form__confirmation {
+  display: block;
+}
 
 /*# sourceMappingURL=style-index.css.map*/

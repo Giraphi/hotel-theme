@@ -60,7 +60,7 @@ add_action('wp_insert_post', function($post_ID, $post) {
 	return $post_ID;	
 }, 10, 2);
 
-
+// Set default content for the room custom post type
 add_filter( 'default_content', function ( $content, $post ) {
     if ( 'room' !== $post->post_type ) {
 		return $content;
@@ -74,3 +74,15 @@ add_filter( 'default_content', function ( $content, $post ) {
 	<!-- /wp:hotel-theme/slider -->
 	EOT;
 }, 10, 2 );
+
+
+add_action('wp_ajax_nopriv_mail_before_submit', 'mail_before_submit');
+add_action('wp_ajax_mail_before_submit', 'mail_before_submit');
+function mail_before_submit() {
+    $to = $_POST['to'];
+   	$title = $_POST['title'];
+    $text = $_POST['text'];
+
+    wp_mail($to, $title, 'body text');
+    return 'email sent';
+}
