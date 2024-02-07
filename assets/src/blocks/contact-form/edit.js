@@ -1,4 +1,3 @@
-import { InnerBlocks } from "@wordpress/block-editor";
 import "./editor.scss";
 import { useBlockProps } from "@wordpress/block-editor";
 

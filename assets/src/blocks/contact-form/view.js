@@ -8,7 +8,6 @@ selectors = {
 
 class ContactForm {
 	constructor(element) {
-		console.log("constructor");
 		this.element = element;
 		this.init();
 	}
@@ -16,9 +15,22 @@ class ContactForm {
 	async submitForm() {
 		const data = new FormData();
 		data.append("action", "mail_before_submit");
-		data.append("to", "hoeps.raphael@gmail.com");
-		data.append("title", "Some title");
-		data.append("text", "Some text");
+		data.append("title", "Room Request");
+		data.append(
+			"text",
+			`
+New room request
+----------------
+Name: ${this.elements.inputName.value}
+Mail: ${this.elements.inputEmail.value}
+Room: ${window.location.href}
+
+Message:
+${this.elements.inputMessage.value}
+		`,
+		);
+
+		console.log(data.get("text"));
 
 		const rawResponse = await fetch(
 			window.location.origin + "/wp-admin/admin-ajax.php",
@@ -46,8 +58,6 @@ class ContactForm {
 	}
 }
 
-console.log("view.js");
 document.querySelectorAll(selectors.element).forEach((element) => {
-	console.log("element found");
 	new ContactForm(element);
 });

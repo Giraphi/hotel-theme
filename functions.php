@@ -76,10 +76,11 @@ add_filter( 'default_content', function ( $content, $post ) {
 }, 10, 2 );
 
 
+// Expose "mail_before_submit" action to frontend js to send emails. (e.g. for the contact form block)
 add_action('wp_ajax_nopriv_mail_before_submit', 'mail_before_submit');
 add_action('wp_ajax_mail_before_submit', 'mail_before_submit');
 function mail_before_submit() {
-    $to = $_POST['to'];
+    $to = get_bloginfo('admin_email'); // Could be set as attribute for the contact form block and passed as $_POST['to']
    	$title = $_POST['title'];
     $text = $_POST['text'];
 
