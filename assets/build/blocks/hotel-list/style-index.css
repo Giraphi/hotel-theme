@@ -4,7 +4,13 @@
 .htl-hotel-list {
   display: flex;
   gap: 24px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .htl-hotel-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .htl-hotel-list__item {
   padding: 16px;
@@ -13,8 +19,6 @@
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  flex: 1;
-  min-width: 240px;
 }
 .htl-hotel-list__item-image {
   aspect-ratio: 1.62;
