@@ -733,6 +733,7 @@ button.swiper-pagination-bullet {
 .swiper {
   width: 100%;
   aspect-ratio: 1.77;
+  margin-bottom: 32px;
 }
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {

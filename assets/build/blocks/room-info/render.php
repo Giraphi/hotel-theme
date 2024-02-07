@@ -5,7 +5,7 @@ $price = get_post_meta($post_id, 'price per night', true);
 ?>
 
 <div class="htl-room-info">
-    <div class="htl-room-info__headline">Basic info</div>
+    <h3 class="htl-room-info__headline">Basic info </h3>
     <div class="htl-room-info__table">
 
         <div>Number of beds: </div>

@@ -18,6 +18,7 @@ add_action( 'init', function() {
 	register_block_type( get_theme_file_path( '/assets/build/blocks/room-info' ));	
 	register_block_type( get_theme_file_path( '/assets/build/blocks/slider' ));	
 	register_block_type( get_theme_file_path( '/assets/build/blocks/image-slide' ));	
+	register_block_type( get_theme_file_path( '/assets/build/blocks/contact-form' ));	
 } );
 
 // Register custom post type: room

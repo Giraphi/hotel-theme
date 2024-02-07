@@ -730,4 +730,40 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+.htl-contact-form {
+  margin-bottom: 64px;
+}
+.htl-contact-form__headline {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.htl-contact-form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+.htl-contact-form__input, .htl-contact-form__textarea {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #111;
+}
+.htl-contact-form__input {
+  max-width: 400px;
+}
+.htl-contact-form__submit {
+  font-weight: 500;
+  font-size: inherit;
+  font-family: inherit;
+  text-transform: uppercase;
+  background-color: #111;
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #111;
+}
+
 /*# sourceMappingURL=style-index.css.map*/

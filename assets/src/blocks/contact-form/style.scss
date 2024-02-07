@@ -2,4 +2,42 @@
 @import "../../../node_modules/swiper/swiper-bundle.min";
 
 .htl-contact-form {
+	margin-bottom: 64px;
+	&__headline {
+		font-weight: bold;
+		margin-bottom: 8px;
+	}
+
+	&__inputs {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		padding-bottom: 16px;
+	}
+
+	&__input,
+	&__textarea {
+		font-size: inherit;
+		font-family: inherit;
+		padding: 8px;
+		border-radius: 4px;
+		border: 1px solid $color-text;
+	}
+
+	&__input {
+		max-width: 400px;
+	}
+
+	&__submit {
+		font-weight: 500;
+		font-size: inherit;
+		font-family: inherit;
+		text-transform: uppercase;
+		background-color: $color-text;
+		color: white;
+		cursor: pointer;
+		padding: 8px 16px;
+		border-radius: 4px;
+		border: 1px solid $color-text;
+	}
 }

@@ -19,6 +19,7 @@
 	},
 	"dependencies": {
 		"@glidejs/glide": "^3.6.0",
+		"antd": "^5.14.0",
 		"glidejs": "^2.1.0",
 		"swiper": "^11.0.6"
 	}
