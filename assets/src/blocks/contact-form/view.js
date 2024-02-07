@@ -22,7 +22,7 @@ class ContactForm {
 New room request
 ----------------
 Name: ${this.elements.inputName.value}
-Mail: ${this.elements.inputEmail.value}
+E-Mail: ${this.elements.inputEmail.value}
 Room: ${window.location.href}
 
 Message:
@@ -30,7 +30,13 @@ ${this.elements.inputMessage.value}
 		`,
 		);
 
+		console.log(
+			"Trying to send and e-mail to admin mail adress with the following content:",
+		);
 		console.log(data.get("text"));
+		console.log(
+			"NOTE: The mail can only be sent if the server is configured properly to make use of wp_mail().",
+		);
 
 		const rawResponse = await fetch(
 			window.location.origin + "/wp-admin/admin-ajax.php",
