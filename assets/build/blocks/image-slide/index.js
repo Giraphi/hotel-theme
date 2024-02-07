@@ -216,7 +216,7 @@ module.exports = window["wp"]["components"];
   \*******************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"hotel-theme/image-slide","version":"0.1.0","title":"Image Slide","category":"hotel","description":"Basic image slide","example":{},"textdomain":"image-slide","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"hotel-theme/image-slide","version":"0.1.0","title":"Image Slide","category":"hotel-theme","description":"Basic image slide","example":{},"textdomain":"image-slide","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 

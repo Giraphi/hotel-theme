@@ -110,7 +110,7 @@ module.exports = window["wp"]["blocks"];
   \******************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"hotel-theme/hotel-list","version":"0.1.0","title":"Hotel List","category":"hotel","description":"A block for listing hotel roomz.","example":{},"attributes":{"reverseOrder":{"type":"boolean"}},"textdomain":"hotel-list","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","render":"file:./render.php"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"hotel-theme/hotel-list","version":"0.1.0","title":"Hotel List","category":"hotel-theme","description":"A block for listing hotel roomz.","example":{},"attributes":{"reverseOrder":{"type":"boolean"}},"textdomain":"hotel-list","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","render":"file:./render.php"}');
 
 /***/ })
 

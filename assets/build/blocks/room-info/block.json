@@ -4,7 +4,7 @@
   "name": "hotel-theme/room-info",
   "version": "0.1.0",
   "title": "Room Info",
-  "category": "hotel",
+  "category": "hotel-theme",
   "description": "Basic room info",
   "example": {},
   "textdomain": "hotel-room",

@@ -4,7 +4,7 @@
   "name": "hotel-theme/image-slide",
   "version": "0.1.0",
   "title": "Image Slide",
-  "category": "hotel",
+  "category": "hotel-theme",
   "description": "Basic image slide",
   "example": {},
   "textdomain": "image-slide",

@@ -164,7 +164,7 @@ module.exports = window["wp"]["blocks"];
   \********************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"hotel-theme/intro-banner","version":"0.1.0","title":"Intro Banner","category":"hotel","description":"Intro banner block","example":{},"attributes":{"text":{"type":"string"}},"textdomain":"intro-banner","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"hotel-theme/intro-banner","version":"0.1.0","title":"Intro Banner","category":"hotel-theme","description":"Intro banner block","example":{},"attributes":{"text":{"type":"string"}},"textdomain":"intro-banner","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
 
 /***/ })
 

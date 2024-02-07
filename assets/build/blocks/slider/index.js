@@ -157,7 +157,7 @@ module.exports = window["wp"]["blocks"];
   \**************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"hotel-theme/slider","version":"0.1.0","title":"Slider","category":"hotel","description":"Basic image slider","example":{},"textdomain":"slider","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"hotel-theme/slider","version":"0.1.0","title":"Slider","category":"hotel-theme","description":"Basic image slider","example":{},"textdomain":"slider","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 

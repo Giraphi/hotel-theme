@@ -158,7 +158,7 @@ module.exports = window["wp"]["blocks"];
   \********************************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"hotel-theme/contact-form","version":"0.1.0","title":"Contact Form","category":"hotel","description":"Basic Contact Form","example":{},"textdomain":"contact-form","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"hotel-theme/contact-form","version":"0.1.0","title":"Contact Form","category":"hotel-theme","description":"Basic Contact Form","example":{},"textdomain":"contact-form","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 

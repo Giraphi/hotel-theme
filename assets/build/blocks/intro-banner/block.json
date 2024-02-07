@@ -4,7 +4,7 @@
   "name": "hotel-theme/intro-banner",
   "version": "0.1.0",
   "title": "Intro Banner",
-  "category": "hotel",
+  "category": "hotel-theme",
   "description": "Intro banner block",
   "example": {},
   "attributes": {
