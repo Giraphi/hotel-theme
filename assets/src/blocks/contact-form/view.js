@@ -32,9 +32,7 @@ ${this.elements.inputMessage.value}
 
 		console.log(
 			"Trying to send and e-mail to admin mail adress with the following content:",
-		);
-		console.log(data.get("text"));
-		console.log(
+			data.get("text"),
 			"NOTE: The mail can only be sent if the server is configured properly to make use of wp_mail().",
 		);
 

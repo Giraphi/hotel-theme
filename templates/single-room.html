@@ -1,18 +1,50 @@
 <!-- wp:template-part {"slug":"header","theme":"hotel-theme","area":"header"} /-->
 
 <!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:spacer {"height":"32px"} -->
-    <div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer -->
-    
-    <!-- wp:post-title  /-->
-    
-    <!-- wp:post-content /-->
-    
+<div class="wp-block-group">
     <!-- wp:spacer {"height":"32px"} -->
-    <div style="height:32px" aria-hidden="true" class="wp-block-spacer"></div>
+    <div
+        style="height: 32px"
+        aria-hidden="true"
+        class="wp-block-spacer"
+    ></div>
     <!-- /wp:spacer -->
-    
-    <!-- wp:hotel-theme/room-info /--></div>
-    <!-- /wp:group -->
 
+    <!-- wp:post-title /-->
+
+    <!-- wp:post-content /-->
+
+    <!-- wp:hotel-theme/room-info /-->
+
+    <!-- wp:hotel-theme/contact-form -->
+    <div
+        class="wp-block-hotel-theme-contact-form htl-contact-form htl-js-contact-form"
+    >
+        <h3 class="htl-contact-form__headline">Contact</h3>
+        <p>
+            If you want to request the room or have any questions, use this form
+            to contact us:
+        </p>
+        <div class="htl-contact-form__inputs">
+            <input
+                class="htl-contact-form__input htl-js-contact-form__input-name"
+                placeholder="Name"
+            /><input
+                class="htl-contact-form__input htl-js-contact-form__input-email"
+                placeholder="E-Mail"
+            /><textarea
+                type=""
+                class="htl-contact-form__textarea htl-js-contact-form__input-message"
+                placeholder="Message ..."
+            ></textarea>
+        </div>
+        <button class="htl-contact-form__submit htl-js-contact-form__submit">
+            Submit
+        </button>
+        <h3 class="htl-contact-form__confirmation">
+            Thank you for your message. We will contact you soon.
+        </h3>
+    </div>
+    <!-- /wp:hotel-theme/contact-form -->
+</div>
+<!-- /wp:group -->
