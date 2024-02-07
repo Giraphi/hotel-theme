@@ -34,7 +34,7 @@ add_action( 'init', function() {
 
 
 add_filter( 'allowed_block_types_all',function( $allowed_block_types, $editor_context ) {
-	if ( 'room' === $editor_context->post->post_type ) {
+	if ( isset($editor_context->post) && 'room' === $editor_context->post->post_type ) {
 		return array(
 			'core/paragraph',
 			'core/spacer',
