@@ -1,0 +1,5 @@
+@import "../../global/style/mixins.scss";
+
+.wp-block-hotel-theme-contact-form {
+	@include placeholder-mixin;
+}

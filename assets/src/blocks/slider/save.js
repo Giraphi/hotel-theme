@@ -1,7 +1,7 @@
 import { InnerBlocks, useBlockProps } from "@wordpress/block-editor";
 
 export default function Save() {
-	const blockProps = useBlockProps.save({ className: "slider" });
+	const blockProps = useBlockProps.save({ className: "htl-slider" });
 
 	return (
 		<div {...blockProps}>

@@ -47,7 +47,12 @@ export default function Edit(props) {
 				{props.attributes.imgURL ? (
 					<img src={props.attributes.imgURL}></img>
 				) : (
-					<p>Select image in settings on the right</p>
+					<div>
+						<p>IMAGE SLIDE BLOCK</p>
+						<p class="wp-block-hotel-theme-image-slide__caption">
+							Select image in settings on the right
+						</p>
+					</div>
 				)}
 			</div>
 		</>

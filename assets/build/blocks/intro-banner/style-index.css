@@ -7,10 +7,10 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
-.intro-banner {
+.htl-intro-banner {
   padding: 20px 0;
 }
-.intro-banner__headline {
+.htl-intro-banner__headline {
   font-weight: 900;
   text-transform: uppercase;
   font-size: 5rem;

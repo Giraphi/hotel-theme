@@ -62,7 +62,9 @@ function Edit(props) {
     ...blockProps
   }, props.attributes.imgURL ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: props.attributes.imgURL
-  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Select image in settings on the right")));
+  }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "IMAGE SLIDE BLOCK"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "wp-block-hotel-theme-image-slide__caption"
+  }, "Select image in settings on the right"))));
 }
 
 /***/ }),
@@ -120,15 +122,15 @@ __webpack_require__.r(__webpack_exports__);
 
 function Save(props) {
   const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save({
-    className: "swiper-slide image-slide"
+    className: "swiper-slide htl-image-slide"
   });
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
   }, props.attributes.imgURL ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "image-slide__container"
+    className: "htl-image-slide__container"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
     src: props.attributes.imgURL,
-    className: "image-slide__image"
+    className: "htl-image-slide__image"
   })) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "No image selected"));
 }
 

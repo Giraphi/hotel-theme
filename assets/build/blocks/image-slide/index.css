@@ -20,7 +20,7 @@
   height: 400px;
   width: auto;
 }
-.wp-block-hotel-theme-image-slide p {
+.wp-block-hotel-theme-image-slide__caption {
   font-weight: normal;
   font-style: italic;
 }

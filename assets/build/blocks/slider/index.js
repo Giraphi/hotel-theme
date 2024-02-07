@@ -78,7 +78,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function Save() {
   const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save({
-    className: "slider"
+    className: "htl-slider"
   });
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps
