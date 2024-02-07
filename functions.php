@@ -60,27 +60,16 @@ add_action('wp_insert_post', function($post_ID, $post) {
 }, 10, 2);
 
 
-// For the room custom post type, set the default content to a slider block
-// add_filter( 'default_content', function ( $content, $post ) {
-//     if ( 'room' !== $post->post_type ) {
-// 		return $content;
-// 	}
+add_filter( 'default_content', function ( $content, $post ) {
+    if ( 'room' !== $post->post_type ) {
+		return $content;
+	}
 	
-// 	return <<<EOT
-// 	<!-- wp:hotel-theme/slider -->
-// 	<div class="wp-block-hotel-theme-slider slider">
-// 		<div class="glide">
-// 			<div data-glide-el="track" class="glide__track">
-// 				<ul class="glide__slides">
-// 					<!-- wp:hotel-theme/image-slide -->
-// 					<li class="wp-block-hotel-theme-image-slide glide__slide">
-// 						<p>No image selected</p>
-// 					</li>
-// 					<!-- /wp:hotel-theme/image-slide -->
-// 				</ul>
-// 			</div>
-// 		</div>
-// 	</div>
-// 	<!-- /wp:hotel-theme/slider -->
-// 	EOT;
-// }, 10, 2 );
+	return <<<EOT
+	<!-- wp:hotel-theme/slider -->
+	<div class="wp-block-hotel-theme-slider htl-slider"><div class="swiper"><div class="swiper-wrapper"><!-- wp:hotel-theme/image-slide -->
+	<div class="wp-block-hotel-theme-image-slide swiper-slide htl-image-slide"><p>No image selected</p></div>
+	<!-- /wp:hotel-theme/image-slide --></div><div class="swiper-pagination"></div><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div></div>
+	<!-- /wp:hotel-theme/slider -->
+	EOT;
+}, 10, 2 );
