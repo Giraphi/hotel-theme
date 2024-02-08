@@ -1,7 +1,7 @@
 <?php
 ;
 
-// Add glo  l style to the site rendered in the gutenberg editor
+// Add global style to the site rendered in the gutenberg editor
 add_action( 'after_setup_theme', function() {
 	add_editor_style( get_theme_file_uri("/assets/build/global/style-index.css") );
 } );
@@ -32,7 +32,7 @@ add_action( 'init', function() {
 	register_block_type( get_theme_file_path( '/assets/build/blocks/contact-form' ));	
 } );
 
-
+// Limit the amout of allowed blocks. For this theme, we do want to confront editors with the possibility to redesign the entire site.
 add_filter( 'allowed_block_types_all',function( $allowed_block_types, $editor_context ) {
 	if ( isset($editor_context->post) && 'room' === $editor_context->post->post_type ) {
 		return array(
