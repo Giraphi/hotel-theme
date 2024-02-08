@@ -1,7 +1,7 @@
 ## Wordpress Hotel Theme
 
-This simple demo-theme is based on custom blocks to be used with the WordPress
-Gutenberg Editor Full Site Editing). It was developed for WordPress 6.4.3 and PHP
+This is a simple wordpress demo-theme, based on custom blocks to be used with the WordPress
+Gutenberg Editor (Full Site Editing). It was developed for WordPress 6.4.3 and PHP
 8.1.23. It does not use any plugins.
 
 <h2>Install the theme</h2>
