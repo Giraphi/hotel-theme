@@ -1,4 +1,4 @@
-## Hotel Theme Guide
+## Wordpress Hotel Theme
 
 This simple demo-theme is based on custom blocks to be used with the WordPress
 Gutenberg Editor Full Site Editing). It was developed for WordPress 6.4.3 and PHP
