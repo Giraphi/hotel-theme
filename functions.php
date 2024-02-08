@@ -1,7 +1,7 @@
 <?php
 ;
 
-// Add global style to the site rendered in the gutenberg editor
+// Add glo  l style to the site rendered in the gutenberg editor
 add_action( 'after_setup_theme', function() {
 	add_editor_style( get_theme_file_uri("/assets/build/global/style-index.css") );
 } );
@@ -25,7 +25,7 @@ add_filter( 'block_categories_all' , function($categories) {
 // Register all custom blocks from assets/src/blocks
 add_action( 'init', function() {
 	register_block_type( get_theme_file_path( '/assets/build/blocks/hotel-list' ));
-	register_block_type( get_theme_file_path( '/assets/build/blocks/intro-banner' ));	
+	register_block_type( get_theme_file_path( '/assets/build/blocks/intro-headline' ));	
 	register_block_type( get_theme_file_path( '/assets/build/blocks/room-info' ));	
 	register_block_type( get_theme_file_path( '/assets/build/blocks/slider' ));	
 	register_block_type( get_theme_file_path( '/assets/build/blocks/image-slide' ));	
@@ -47,7 +47,7 @@ add_filter( 'allowed_block_types_all',function( $allowed_block_types, $editor_co
 		'core/paragraph',
 		'core/spacer',
 		'hotel-theme/hotel-list',
-		'hotel-theme/intro-banner',
+		'hotel-theme/intro-headline',
 		'hotel-theme/room-info',
 		'hotel-theme/slider',
 		'hotel-theme/image-slide',

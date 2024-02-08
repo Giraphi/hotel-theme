@@ -1,8 +1,7 @@
-import "./editor.scss";
 import { RichText, useBlockProps } from "@wordpress/block-editor";
 
 export default function Edit(props) {
-	const blockProps = useBlockProps({ className: "htl-intro-banner" });
+	const blockProps = useBlockProps({ className: "htl-intro-headline" });
 
 	function handleTextChange(update) {
 		props.setAttributes({ text: update });
@@ -13,7 +12,7 @@ export default function Edit(props) {
 			<RichText
 				allowedFormats={["core/italic"]}
 				tagName="h1"
-				className={`htl-intro-banner__headline`}
+				className={`htl-intro-headline__headline`}
 				value={props.attributes.text}
 				onChange={handleTextChange}
 			/>
